@@ -74,7 +74,7 @@
 }
 
 .services{
-  height:400px;
+  height:500px;
   clear:both;
   font-family: 'Lato','Raleway',sans-serif;
   background-image: url('https://idlemindss.github.io/intro-workbook/css/images/tunnel.jpeg');
@@ -84,7 +84,7 @@
 
 .whoweare {
   border: 3px white solid;
-  margin: 30px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -107,6 +107,8 @@
 .whoweare>h3{
     font-family: 'Lato','Raleway',sans-serif;
     color: white;
+    text-align: center;
+    margin:50px 0 40px 0;
 }
 
 .about{
@@ -121,10 +123,6 @@
   animation: bounce;
 }
 
-.item>img{
-  margin:0 auto;
-  max-height: 550px;
-}
 .portfolio{
     font-family: 'Lato','Raleway',sans-serif;
     letter-spacing: 40px;
@@ -133,14 +131,16 @@
 }
 
 .education, .skills {
-  height:400px;
+  height:500px;
   background-color: #F6F6F6;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  margin:none;
 }
 
-.education>h1, .skills>h1 {
+.education>h3, .skills>h3 {
   color:#D95C5C;
+  margin-top: 50px;
 }
 .education>ul, h4 {
   list-style: none;
@@ -287,9 +287,9 @@
   margin-top:100px;
   margin-left: 110px;
 }
-h3 {
+.footer>h3 {
   font-size:30px;
-  font-family:CenturyGothic;
+  font-family:'Lato', 'Open Sans', sans-serif;
   text-align:center;
   color:#2b2b2b;
   padding-top: 30px;
@@ -318,13 +318,7 @@ form>h4{
 #contact{
   display: inline-block;
 }
-.map{
-  height:200px;
-  display:inline-block;
-  margin-top: -250px;
 
-
-}
 #button{
   text-decoration: none;
   padding:10px;
