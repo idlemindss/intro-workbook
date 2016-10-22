@@ -49,22 +49,17 @@
   opacity: 0.8;
 }
 
-.bg_two {
-  background-image: url('images/blacksandbeach.jpeg');
-  height: 400px;
-}
 
 .project a {
   text-decoration: none;
   border:2px white solid;
   padding:5px;
   color:white;
-  font-family:'CenturyGothic','Lato',sans-serif;
+  font-family:'Open Sans','Lato',sans-serif;
   font-size:16px;
 }
 .project {
   height:300px;
-  margin:35px;
   opacity:0.7;
     -webkit-filter:grayscale(100%);
 }
@@ -82,7 +77,6 @@
   height:400px;
   clear:both;
   font-family: 'Lato','Raleway',sans-serif;
-  margin-bottom: 100px;
   background-image: url('http://idlemindss.github.io/intro-workbook/css/images/tunnel.jpeg');
   background-attachment: fixed;
   background-position: center;
@@ -90,18 +84,15 @@
 
 .whoweare {
   border: 3px white solid;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 0px 0px;
   padding-left: 5px;
   padding-right: 5px;
-
-
-
 }
-.wd {
+.design {
   margin-left:-5px;
   margin-right: 5px;
 }
-.cw {
+.content {
   margin-right:-5px;
   margin-left: 5px;
 }
@@ -129,16 +120,7 @@
 .about:hover{
   animation: bounce;
 }
-.carouseldescription{
-  font-style: italic;
-  margin:0 auto;
-}
-#carousel-example-generic{
-  width:1000px;
-  height:550px;
-  margin:0 auto;
-  margin-bottom: 50px;
-}
+
 .item>img{
   margin:0 auto;
   max-height: 550px;
@@ -149,9 +131,29 @@
     text-align: center;
     margin: 30px;
 }
+
+.education, .skills {
+  height:400px;
+  background-color: #F6F6F6;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.education>h1, .skills>h1 {
+  color:#D95C5C;
+}
+.education>ul, h4 {
+  list-style: none;
+  text-align: left;
+}
+
+.skills>h4 {
+  list-style: none;
+  text-align: left;
+}
 /*Styling for data cell titles*/
 
-/*Styling for divs*/
+/*Styling for portfolio cells*/
 .one {
   display:inline-block;
   position:relative;
@@ -295,8 +297,7 @@ h3 {
 .lessons {
   text-decoration:none;
   color:white;
-  font-family:CenturyGothic;
-  font-weight: lighter;
+  font-family:'Open Sans', 'Lato', sans-serif;
   text-align:center;
   margin-left: -70px;
   padding-top: 20px;
