@@ -453,8 +453,7 @@ form>h4{
 @media(max-width:500px){
   #main{
     height:400px;
-    background-position: left;
-    width:100%;
+    background-position: center;
   }
   #main>h1{
     font-size: 50px;
@@ -470,8 +469,9 @@ form>h4{
     font-family:'Yellowtail', cursive;
   }
 
-  .about{
-    margin-left: 130px;
+  .services {
+    background-image: url('https://idlemindss.github.io/intro-workbook/css/images/tunnel.jpeg');
+    background-position: top;
   }
   .portfolio{
     letter-spacing: 10px;
