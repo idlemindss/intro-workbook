@@ -2,6 +2,21 @@
 
 $(document).ready(function(){
   $('.title, .emailRedirect').delay(800).addClass('animated fadeIn').fadeIn(900);
+// email call
+  $("input#submit").click(function(){
+        $.ajax({
+            type: "POST",
+            url: "process.php", //process to mail
+            data: $('form.contact').serialize(),
+            success: function(msg){
+                $("#thanks").html(msg) //hide button and show thank you
+                $("#form-content").modal('hide'); //hide popup
+            },
+            error: function(){
+                alert("failure");
+            }
+        });
+    });
 
 });
 

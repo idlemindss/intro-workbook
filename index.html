@@ -7,7 +7,6 @@
   <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -61,14 +60,42 @@
 
 
 
-  <div class="container-fluid parallax col-xs-12 col-sm-12 col-md-12 col-lg-12" id="main">
+  <div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12" id="main">
     <h1 class="title">Idle Minds</h1>
-    <button class="emailRedirect">
-    contact</button>
-    <button class="resumeRedirect">
-    resume</button>
-  </div>
+    <div class="MainLinks">
+      <button type="button" class="btn btn-info btn-lg emailRedirect" data-toggle="modal" data-target="#myModal">
+      contact</button>
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
 
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Contact me</h4>
+        </div>
+        <div class="modal-body">
+          <!-- email form content -->
+          <form class="form-horizontal col-sm-12">
+          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
+          <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
+          <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
+          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+      </div>
+      </div>
+    <!-- end of modal window -->
+      <button type='button'class="resumeRedirect">
+      resume</button>
+    </div>
+  </div>
 
   <div class="container-fluid services">
     <div class="animationElements bounce-up">
@@ -94,7 +121,7 @@
   </div>
   </div>
 
-<div class="container-fluid qualities">
+<div class="container-fluid qualities parallax">
   <div class="transparentBox">
   <div class="animationElements bounce-up">
     <div class="education col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -167,7 +194,7 @@
 
 
 <!--portfolio-->
-  <h1 class="portfolio col-xs-12 col-sm-12">WORK</H1>
+  <h1 class="portfolio col-xs-12 col-sm-12">PORTFOLIO</H1>
 <div class="container col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
   <div class="row">
           <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3 project one">
