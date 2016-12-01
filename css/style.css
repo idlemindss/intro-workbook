@@ -39,6 +39,7 @@ body {
   background-position:top;
   text-align: center;
   background-attachment: fixed;
+  padding:none;
 }
 
 .title{
@@ -73,11 +74,28 @@ body {
   border:2px white solid;
 }
 
+#nameDescription {
+  height:400px;
+  text-align: center;
+  padding-top:50px;
+  font-family: 'Raleway', 'Lato', sans-serif;
+  font-style: italic;
+  background-color:#f8f8f8;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#nameDescription h3 {
+  border: 3px solid #8EB8B7;
+  padding:150px 0 120px 0;
+
+}
+
 .services{
   height:500px;
   clear:both;
-  font-family: 'Raleway',sans-serif;
-  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/tunnel.jpeg');
+  font-family: 'Raleway', 'Lato', sans-serif;
+  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/wheat.jpeg');
   background-attachment: fixed;
   background-position: center;
 }
@@ -124,19 +142,12 @@ body {
 }
 
 .qualities {
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/womanmag.png");
-  background-attachment: fixed;
-  background-size: contain;
+  background-color: #f6f6f6;
 }
 
-.transparentBox {
-  background-color: rgba(255,255,255, 0.8);
-  height: 450px;
-  margin: 30px;
 
-}
 .education, .skills {
-  height:500px;
+  height:400px;
   text-align: center;
   font-family: 'Raleway','Lato', sans-serif;
   margin:none;
@@ -177,7 +188,12 @@ body {
     letter-spacing: 40px;
     text-align: center;
     margin: 100px 0 100px 0;
+
 }
+/*.curtain {
+  height:1200px;
+  background-color: rgba(0, 0, 0, 0.3);
+}*/
 
 .project a {
   text-decoration: none;
@@ -189,7 +205,7 @@ body {
 }
 .project {
   height:300px;
-  opacity:0.8;
+  opacity:0.7;
     -webkit-filter:grayscale(100%);
 }
 .project:hover {

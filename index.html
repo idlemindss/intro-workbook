@@ -61,7 +61,7 @@
 
 
   <div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12" id="main">
-    <h1 class="title">Idle Minds</h1>
+    <h1 class="title">Welcome</h1>
     <div class="MainLinks">
       <button type="button" class="btn btn-info btn-lg emailRedirect" data-toggle="modal" data-target="#myModal">
       contact</button>
@@ -77,16 +77,48 @@
         </div>
         <div class="modal-body">
           <!-- email form content -->
-          <form class="form-horizontal col-sm-12">
-          <div class="form-group"><label>Name</label><input class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text"></div>
-          <div class="form-group"><label>Message</label><textarea class="form-control" placeholder="Your message here.." data-placement="top" data-trigger="manual"></textarea></div>
-          <div class="form-group"><label>E-Mail</label><input class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
-          <div class="form-group"><button type="submit" class="btn btn-success pull-right">Send It!</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+          <form class="form-horizontal" role="form" method="post" action="js/process.php">
+        	<div class="form-group">
+        		<label for="name" class="col-sm-2 control-label">Name</label>
+        		<div class="col-sm-10">
+        			<input type="text" class="form-control" id="name" name="name" placeholder="First and Last Name" value="">
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<label for="email" class="col-sm-2 control-label">Email</label>
+        		<div class="col-sm-10">
+        			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<label for="message" class="col-sm-2 control-label">Message</label>
+        		<div class="col-sm-10">
+        			<textarea class="form-control" rows="4" name="message"></textarea>
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        		<div class="col-sm-10">
+        			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<div class="col-sm-10 col-sm-offset-2">
+        			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        		</div>
+        	</div>
+        	<div class="form-group">
+        		<div class="col-sm-10 col-sm-offset-2">
+
+              <?php echo $result; ?>
+        		</div>
+        	</div>
         </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+      </div>
+      <!-- end of modal body -->
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" id='submit'>Close</button>
+      </div>
       </div>
 
       </div>
@@ -96,6 +128,10 @@
       resume</button>
     </div>
   </div>
+
+<div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-12" id="nameDescription">
+    <h3>"Almost always, the creative, dedicated minority has made the world better."</h3>
+</div>
 
   <div class="container-fluid services">
     <div class="animationElements bounce-up">
@@ -109,7 +145,7 @@
       <div class="whoweare col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <i class="fa fa-user fa-4x aboutIcons" aria-hidden="true"></i>
       <h3>WHO I AM</h3>
-      <h4><em>IDLE MINDS</em> is a collaborative endeavor that aims to help creatives, makers, business owners, entrepeneurs, and side-hustlers bring their unique visions to life by way of offering web design and <br>content-creation services.</h4>
+      <h4>A collaborative endeavor that aims to help creatives, makers, business owners, entrepeneurs, and side-hustlers bring their unique visions to life by way of offering web design and <br>content-creation services.</h4>
       </div>
   </div>
   <div class="animationElements bounce-up">
@@ -119,10 +155,9 @@
       <h4>Trained in the art of rhetoric and writing, I work to ensure that content on your site is specifically targeted to resonate with your intended audience. Good writing employs concision and coherency, refusing to sacrifice one for the other.
     </div>
   </div>
-  </div>
+</div>
 
-<div class="container-fluid qualities parallax">
-  <div class="transparentBox">
+<div class="container-fluid qualities">
   <div class="animationElements bounce-up">
     <div class="education col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <h3>EDUCATION</h3><br>
@@ -146,56 +181,56 @@
     <div class="skills col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <h3>SKILLS</h3><br>
         <h5>Content Writing
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
         </h5><br>
         <h5>HTML/CSS
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
         </h5><br>
         <h5>JQuery
-          <i class="schoolIcons fa fa-square-o fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check-o fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
         </h5><br>
         <h5>Javascript
-          <i class="schoolIcons fa fa-square-o fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square-o fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check-o fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check-o fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
         </h5><br>
         <h5>Bootstrap
-          <i class="schoolIcons fa fa-square-o fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
-          <i class="schoolIcons fa fa-square fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check-o fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
+          <i class="schoolIcons fa fa-check fa-fw fa-2x" aria-hidden="true"></i>
         </h5>
     </div>
     </div>
-  </div>
 </div>
 
 
 
 
 <!--portfolio-->
-  <h1 class="portfolio col-xs-12 col-sm-12">PORTFOLIO</H1>
+<h1 class="portfolio col-xs-12 col-sm-12">PORTFOLIO</H1>
 <div class="container col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+  <div class="curtain">
   <div class="row">
           <div class="col-xs-12 col-sm-5 col-md-3 col-lg-3 project one">
             <span class="links">
@@ -275,6 +310,7 @@
           </div>
 </div>
 </div>
+</div>
 
 
   <div class="footer col-md-12 col-lg-12 hidden-xs hidden-sm">
@@ -302,6 +338,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+<script src="js/process.php"></script>
 
 </body>
 </html>
