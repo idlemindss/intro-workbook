@@ -85,10 +85,19 @@ body {
   background-attachment: fixed;
 }
 
-#nameDescription h3 {
-  border: 3px solid #8EB8B7;
-  padding:150px 0 120px 0;
+.quoteBackground {
+  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/starrynight.jpg');
+  height: 300px;
+  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
 
+}
+
+#nameDescription h3 {
+  font-family: 'Amatic SC', 'Raleway', sans-serif;
+  font-size: 30px;
+  line-height: 200px;
 }
 
 .services{
