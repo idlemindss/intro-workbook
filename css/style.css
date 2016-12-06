@@ -75,46 +75,61 @@ body {
 }
 
 #nameDescription {
-  height:800px;
+  height:550px;
   text-align: center;
-  padding-top:50px;
   font-family: 'Raleway', 'Lato', sans-serif;
   font-style: italic;
   background-color:#f6f6f6;
   background-size: cover;
   background-attachment: fixed;
 }
+#nameDescription img {
+  float:left;
+  margin-left:0px;
+}
 
 .headshotSection {
-  height:400px;
-  border: 1px red solid;
-}
-.quoteBackground {
-  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/starrynight.jpg');
-  height: 300px;
-  width: 90%;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: bottom;
-  margin-top: -30px;
+  height:500px;
+  background-color: #E6F7FB;
+  margin:none;
   box-shadow: 5px 5px 5px #888888;
-
 }
 
-#nameDescription h3 {
+.headshotSection>h1 {
+  font-family: 'Raleway', 'Lato', sans-serif;
+  color: #4B5880;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: left;
+  padding-top: 30px;
+}
+
+#nameDescription h1 {
   font-family: 'Amatic SC', 'Raleway', sans-serif;
   font-size: 30px;
   line-height: 200px;
-  color: white;
+  color: #4B5880;
+  text-align: center;
+}
+
+#nameDescription h5 {
+  font-family: 'Lato', sans-serif;
+  padding-right: 50px;
+  line-height: 30px;
+  color: #4B5880;
+  font-style: normal;
+  text-align: center;
 }
 
 .services{
   height:500px;
   clear:both;
   font-family: 'Raleway', 'Lato', sans-serif;
-  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/tunnel.jpeg');
+  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/reaching.jpeg');
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .whoweare {
@@ -172,7 +187,7 @@ body {
 }
 
 .education>h3, .skills>h3 {
-  color:#D95C5C;
+  color:#519CA7;
   margin-top: 50px;
 }
 .education>ul, h4 {
@@ -189,7 +204,7 @@ body {
   text-align: right;
   display: inline-block;
   float:right;
-  color: #8EB8B7;
+  color: #E5BA7B;
 }
 
 .gpa {
