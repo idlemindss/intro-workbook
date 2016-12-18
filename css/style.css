@@ -4,7 +4,7 @@
      box-sizing: border-box;
 }
 body {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 .transparent {
   border-width: 0px;
@@ -76,7 +76,6 @@ body {
 
 #nameDescription {
   height:550px;
-  border:solid red 1px;
   background-color: white;
 }
 
@@ -220,29 +219,24 @@ body {
     margin: 100px 0 100px 0;
 
 }
-/*.curtain {
-  height:1200px;
-  background-color: rgba(0, 0, 0, 0.3);
-}*/
 
 .project a {
   text-decoration: none;
   border:2px white solid;
   padding:5px;
   color:white;
-  font-family:'Open Sans','Lato',sans-serif;
+  font-family:'Raleway', 'Lato', sans-serif;
   font-size:16px;
 }
 .project {
   height:300px;
-  opacity:0.7;
-    -webkit-filter:grayscale(100%);
+  /*opacity:0.7;*/
+    -webkit-filter:grayscale(0%);
 }
 .project:hover {
-  opacity:0.9;
   height:300px;
   filter:none;
-  -webkit-filter:grayscale(0%);
+  -webkit-filter:grayscale(100%);
   -webkit-transition: 400ms;
 
 }
@@ -255,7 +249,7 @@ body {
   display:inline-block;
   position:relative;
   float:left;
-  background-image:url("https://idlemindss.github.io/intro-workbook/css/images/museum.jpeg");
+  background-image:url("https://idlemindss.github.io/intro-workbook/css/images/towersOfHanoiBG.jpeg");
   background-size:cover;
 }
 .one .links {
@@ -297,7 +291,7 @@ body {
 .four {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/tunnel.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/wheat.jpeg");
   background-size:cover;
   float:left;
 }
@@ -310,7 +304,7 @@ body {
 .five {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/notepad.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/womanmag.png");
   background-size:cover;
 }
 .five .links {
@@ -322,7 +316,7 @@ body {
 .six {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/canyonfire.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/bulb.jpeg");
   background-size:cover;
   float:left;
 }
@@ -335,7 +329,7 @@ body {
 .seven {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/street.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/sunsetwater.jpeg");
   background-size:cover;
   float:left;
 }
@@ -348,7 +342,7 @@ body {
 .eight {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/sunlight.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/creatives.png");
   background-size:cover;
   float:left;
 }
@@ -361,7 +355,7 @@ body {
 .nine {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/record.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/mobile-winery.png");
   background-size:cover;
   float:left;
 }
@@ -374,7 +368,7 @@ body {
 .ten {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/trees.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/lighter.jpeg");
   background-size:cover;
   float:left;
 }
@@ -384,6 +378,37 @@ body {
   margin-top:100px;
   margin-left: 110px;
 }
+
+.eleven {
+  display:inline-block;
+  float:left;
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/coffeevinyl.jpeg");
+  background-size:cover;
+  float:left;
+}
+
+.eleven .links {
+  visibility: hidden;
+  display:inline-block;
+  margin-top:100px;
+  margin-left: 110px;
+}
+
+.twelve {
+  display:inline-block;
+  float:left;
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/smoking.jpeg");
+  background-size:cover;
+  float:left;
+}
+
+.twelve .links {
+  visibility: hidden;
+  display:inline-block;
+  margin-top:100px;
+  margin-left: 75px;
+}
+
 .footer>h3 {
   font-size:30px;
   font-family:'Lato', 'Open Sans', sans-serif;
@@ -394,7 +419,7 @@ body {
 .lessons {
   text-decoration:none;
   color:white;
-  font-family:'Open Sans', 'Lato', sans-serif;
+  font-family:'Raleway', 'Lato', sans-serif;
   text-align:center;
   font-size: 16px;
   margin-left: -70px;
