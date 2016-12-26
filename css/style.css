@@ -353,8 +353,9 @@ body {
 .seven {
   display:inline-block;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/blacksandbeach.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/clothingshop.png");
   background-size:cover;
+  background-position:
   float:left;
 }
 .seven .links {
@@ -366,7 +367,7 @@ body {
 .eight {
   display:inline;
   float:left;
-  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/canyonfire.jpeg");
+  background-image: url("https://idlemindss.github.io/intro-workbook/css/images/blacksandbeach.jpeg");
   background-size:cover;
   background-position: right;
 }
@@ -445,25 +446,34 @@ body {
 
 .footer{
   height:400px;
-  background-color: black;
+  background-color:#444556;
+  margin-top: 100px;
 
 }
-.footer>h3{
-  color:white;
-}
-form>h4{
-  color:white;
-  font-family: 'Lato',sans-serif;
-}
-#contact{
-  display: inline-block;
+#map {
+  margin-top:50px;
+  height:300px;
 }
 
-#button{
+#footerSummary {
+  font-family: 'Amatic SC', 'Raleway', 'Lato', sans-serif;
   text-decoration: none;
-  padding:10px;
+  margin-top: 50px;
   color:white;
-  background-color: #6dc6ca;
+  margin-left: 50px;
+}
+
+#footerSummary a {
+  color:white;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: 'Raleway', 'Lato', sans-serif;
+}
+
+#footerSummary a:hover {
+  color:#FDDCA0;
+  text-decoration: none;
+
 }
 /* styling for scrolling animation */
 
@@ -494,6 +504,14 @@ form>h4{
 }
 .animationElements  {
   position:relative;
+}
+
+#navbar-links a {
+  color:#ffffff;
+}
+
+#navbar-links a:hover {
+  color: #E5BA7B;
 }
 
 .navbar-default .navbar-brand {

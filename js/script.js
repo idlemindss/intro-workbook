@@ -36,3 +36,12 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(30.3, -97.7),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.map
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}

@@ -33,11 +33,11 @@
 
         <!-- Collect the nav links for toggling -->
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <ul class="nav navbar-nav navbar-left">
-                <li>SERVICES</li>
-                <li>EDUCATION</li>
-                <li>ABOUT</li>
-                <li>WORK</li>
+            <ul class="nav navbar-nav navbar-left" id="navbar-links">
+                <li><a href="#servicesAnchor">SERVICES</a></li>
+                <li><a href="#educationAnchor">EDUCATION</a></li>
+                <li><a href="#nameDescription">ABOUT</a></li>
+                <li><a href="#portfolioAnchor">WORK</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="https://www.instagram.com/idlemindss/">
@@ -115,6 +115,7 @@
         	</div>
         </form>
       </div>
+
       <!-- end of modal body -->
       <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" id='submit'>Close</button>
@@ -124,8 +125,8 @@
       </div>
       </div>
     <!-- end of modal window -->
-      <button type='button'class="resumeRedirect">
-      resume</button>
+      <button type='button'class="resumeRedirect"><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button">
+      resume</a></button>
     </div>
   </div>
 
@@ -140,7 +141,7 @@
   </div>
 </div>
 
-  <div class="container-fluid services">
+  <div class="container-fluid services" id="servicesAnchor">
     <div class="animationElements bounce-up">
     <div class="whoweare design col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <i class="fa fa-paint-brush fa-3x aboutIcons" aria-hidden="true"></i>
@@ -164,7 +165,7 @@
   </div>
 </div>
 
-<div class="container-fluid qualities">
+<div class="container-fluid qualities" id="educationAnchor">
   <div class="animationElements bounce-up">
     <div class="education col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <h3>EDUCATION</h3><br>
@@ -235,7 +236,7 @@
 
 
 <!--portfolio-->
-<h1 class="portfolio col-xs-12 col-sm-12 col-md-12 col-lg-12">PORTFOLIO</H1>
+<h1 class="portfolio col-xs-12 col-sm-12 col-md-12 col-lg-12" id="portfolioAnchor">PORTFOLIO</H1>
   <h3 class="portfolioInstruct">Hover over each project for a description of what kind of webpage was built. Among the different projects are webgames, sales portals, and webpages for a variety of industries, including technology, news, non-profit, fine wine, sales, advertising, and small business.</h3>
 <div class="container col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
   <div class="row">
@@ -334,22 +335,19 @@
 
 <br>
   <div class="footer col-md-12 col-lg-12 hidden-xs hidden-sm">
-        <h3>CONTACT</h3>
-    <div id="contact" class="col-md-offset-3">
-      <form>
-        <h4>NAME</h4><br>
-        <input type="text" name="name">
-      </form>
-
-    <form>
-    <h4>MESSAGE</h4><br>
-      <textarea rows="4" cols="22"></textarea>
-    </form>
-      <div><br>
-        <a id="button" href="#">S E N D</a>
-      </div>
+    <div id="map" class="col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4">
+    </div>
+    <div id="footerSummary" class="col-md-4 col-lg-4">
+      <h1>Kristina Presley Van Portfolio</h1>
+      <ul>
+        <li><a href="#servicesAnchor">Services</a></li>
+        <li><a href="#educationAnchor">Education</a></li>
+        <li><a href="#nameDescription">About</a></li>
+        <li><a href="#portfolioAnchor">Work</a></li>
+      </ul>
     </div>
   </div>
+
 
 
 
@@ -359,6 +357,8 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script src="js/process.php"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
 
 </body>
 </html>
