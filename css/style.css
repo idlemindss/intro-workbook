@@ -80,7 +80,6 @@ body {
 }
 
 .profilepicture {
-  width: 30%;
   height:500px;
   background-image: url('https://idlemindss.github.io/intro-workbook/css/images/headshotedited.png');
   background-size: cover;
@@ -91,10 +90,9 @@ body {
 }
 
 .headshotSection {
-  width:40%;
   float:right;
   display: inline-block;
-  margin-right: 80px;
+  /*margin-right: 80px;*/
 }
 
 .headshotSection h1 {
@@ -258,7 +256,6 @@ body {
 .project:hover {
   height:300px;
   filter:none;
-  /*-webkit-filter:grayscale(100%);*/
   -webkit-transition: 400ms;
   box-shadow: inset 0 0 300px #000;
 
@@ -598,6 +595,9 @@ body {
     color: #faffff;
     background-color: #6dc6ca;
   }
+  .navbar-header {
+    color:#ffffff;
+  }
 }
 @media(max-width:800px){
   .project{
@@ -615,7 +615,9 @@ body {
 @media(max-width:500px){
   #main{
     height:400px;
+    background-size: cover;
     background-position: center;
+    background-image:url("https://idlemindss.github.io/intro-workbook/css/images/highspeed.jpeg");
   }
   #main>h1{
     font-size: 50px;
@@ -626,27 +628,61 @@ body {
     line-height: normal;
     margin-top: 200px;
   }
+
   .navbar-brand{
     font-size: 25px;
-    font-family:'Yellowtail', cursive;
+    font-family:'Amatic SC','Raleway', sans-serif;
+  }
+  .icon-bar {
+    color:#ffffff;
+  }
+  .navbar-right {
+    display: visible
+  }
+
+  .headshotSection {
+    height:700px;
+    margin-right:none;
+    background-color:white;
+  }
+  .whoweare, .education, .skills {
+    opacity:1;
+    height:450px;
+
+  }
+  .portfolioInstruct {
+    margin:20px 10px 20px 10px;
+  }
+
+  .whoweare {
+    background-color: #4e678f;
   }
 
   .services {
-    background-image: url('https://idlemindss.github.io/intro-workbook/css/images/tunnel.jpeg');
-    background-position: top;
+    background-image: none;
+    margin-top: 100px;
+    background-color: #ffffff;
   }
-  .portfolio{
+  .project {
+    box-shadow: inset 0 0 300px #000;
+  }
+
+  #portfolioAnchor {
+    margin-top: 150px;
     letter-spacing: 10px;
+  }
+  .education ul{
+    padding: 0px 0px 0px 0px;
   }
   .links>a{
     text-align: center;
     margin-left:0px;
-    font-family: 'Lato',sans-serif;
+    font-family: 'Raleway', 'Lato',sans-serif;
   }
   .lessons{
-    font-family:'Lato',sans-serif;
+    font-family:'Raleway','Lato',sans-serif;
   }
   .whoweare>h3{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway','Lato', sans-serif;
   }
 }
