@@ -225,6 +225,10 @@ body {
     font-family: 'Raleway', 'Lato', sans-serif;
     margin: 0 200px 50px 200px;
 }
+
+.portfolioInstruct em {
+  color:#bebebe;
+}
 .project a {
   text-decoration: none;
   border:2px white solid;
@@ -598,6 +602,9 @@ body {
   .navbar-header {
     color:#ffffff;
   }
+  .navbar-toggle {
+    color:#ffffff;
+  }
 }
 @media(max-width:800px){
   .project{
@@ -608,8 +615,29 @@ body {
   .project .links{
     visibility: visible;
   }
+  .headshotSection h1 {
+    margin-top: 20px;
+  }
+  .services {
+    background-image: url("https://idlemindss.github.io/intro-workbook/css/images/reaching.jpeg");
+    background-size: cover;
+    height:1500px;
+  }
+
   .about{
     margin-left: 330px;
+  }
+  .whoweare, .education, .skills {
+    opacity:1;
+  }
+  .portfolio {
+    margin-top: 250px;
+  }
+  .portfolioInstruct {
+    margin: 20px;
+  }
+  .project {
+    display: block;
   }
 }
 @media(max-width:500px){
@@ -617,7 +645,10 @@ body {
     height:400px;
     background-size: cover;
     background-position: center;
-    background-image:url("https://idlemindss.github.io/intro-workbook/css/images/highspeed.jpeg");
+
+  }
+  .container-fluid {
+
   }
   #main>h1{
     font-size: 50px;
