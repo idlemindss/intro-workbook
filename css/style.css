@@ -644,7 +644,7 @@ body {
   #main{
     height:400px;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 
   }
   .container-fluid {
@@ -664,8 +664,9 @@ body {
     font-size: 25px;
     font-family:'Amatic SC','Raleway', sans-serif;
   }
+
   .icon-bar {
-    color:#ffffff;
+    background-color: white;
   }
   .navbar-right {
     display: visible
