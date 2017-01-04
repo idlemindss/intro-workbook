@@ -63,6 +63,9 @@ body {
   color:white;
 }
 
+.modal-body h3 {
+  font-family: 'Raleway', 'Lato', sans-serif;
+}
 .resumeRedirect {
   padding:15px 30px 15px 30px;
   font-family: 'Amatic SC', sans-serif;
@@ -642,13 +645,13 @@ body {
 }
 @media(max-width:500px){
   #main{
-    height:400px;
+    height:600px;
     background-size: cover;
     background-position: bottom;
 
   }
-  .container-fluid {
-
+  .MainLinks {
+    float:left;
   }
   #main>h1{
     font-size: 50px;
