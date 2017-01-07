@@ -647,7 +647,7 @@ body {
   #main{
     height:600px;
     background-size: cover;
-    background-position: bottom;
+    background-attachment: fixed;
 
   }
   .MainLinks {
