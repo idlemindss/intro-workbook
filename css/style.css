@@ -3,9 +3,7 @@
     -webkit-box-sizing: border-box;
      box-sizing: border-box;
 }
-body {
-  background-color: #f6f6f6;
-}
+
 .transparent {
   border-width: 0px;
     -webkit-box-shadow: 0px 0px;
@@ -36,7 +34,6 @@ body {
   background-image:url("https://idlemindss.github.io/intro-workbook/css/images/highspeed.jpeg");
   background-size: cover;
   position: relative;
-  background-position:top;
   text-align: center;
   background-attachment: fixed;
   padding:none;
@@ -167,13 +164,6 @@ body {
   margin-top: 50px;
   vertical-align: bottom;
 }
-.about:hover{
-  animation: bounce;
-}
-
-.qualities {
-  background-color: #f6f6f6;
-}
 
 
 .education, .skills {
@@ -230,7 +220,7 @@ body {
 }
 
 .portfolioInstruct em {
-  color:#bebebe;
+  color:#7d7d7d;
 }
 .project a {
   text-decoration: none;
@@ -251,65 +241,47 @@ body {
 }
 .project {
   height:300px;
-  /*opacity:0.7;*/
-    -webkit-filter:grayscale(0%);
+  background-size: cover;
+  float:left;
 }
 
 .project:hover .links{
   visibility: visible;
-  opacity:1;
+
 }
 
 .project:hover {
-  height:300px;
   filter:none;
   -webkit-transition: 400ms;
   box-shadow: inset 0 0 300px #000;
 
 }
-
-
+.one, .three, .four, .five, .six, .seven, .nine, .ten, .eleven, .twelve {
+  display: inline-block;
+}
+.two, .eight {
+  display:inline;
+}
 .one {
-  display:inline-block;
-  position:relative;
-  float:left;
   background-image:url("https://idlemindss.github.io/intro-workbook/css/images/towersOfHanoiBG.jpeg");
-  background-size:cover;
 }
 
-.one .links {
+.one .links, .two .links, .four .links, .seven .links, .ten .links, .eleven .links {
   display:inline-block;
   visibility: hidden;
   margin-top:100px;
   margin-left: 110px;
-  opacity:1;
 }
 
 .two {
-  display:inline;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/guitar.jpeg");
-  background-size:cover;
-  float:left;
-  position:relative;
-}
-
-
-.two .links {
-  display:inline-block;
-  visibility: hidden;
-  margin-top:100px;
-  margin-left: 110px;
 }
 
 .three {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/creatives.png");
-  background-size:cover;
   background-position: bottom;
-  float:left;
 }
-.three .links {
+.three .links, .five .links, .six .links, .eight .links, .nine .links, .twelve .links {
   visibility: hidden;
   display:inline-block;
   margin-top:100px;
@@ -317,126 +289,43 @@ body {
 }
 
 .four {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/lighter.jpeg");
-  background-size:cover;
-  float:left;
 }
-.four .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 100px;
-}
+
 .five {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/womanmag.png");
-  background-size:cover;
 }
-.five .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 75px;
-}
+
 .six {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/notepad.jpeg");
-  background-size:cover;
-  float:left;
 }
-.six .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 75px;
-}
+
 .seven {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/clothingshop.png");
-  background-size:cover;
-  background-position:
-  float:left;
 }
-.seven .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 110px;
-}
+
 .eight {
-  display:inline;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/blacksandbeach.jpeg");
-  background-size:cover;
   background-position: right;
 }
-.eight .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 75px;
-}
+
 .nine {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/mobile-winery.png");
-  background-size:cover;
-  float:left;
 }
-.nine .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 75px;
-}
+
 .ten {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/mist.jpeg");
-  background-size:cover;
   background-position: bottom;
-  float:left;
 }
-.ten .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 110px;
-}
+
 
 .eleven {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/coffeevinyl.jpeg");
-  background-size:cover;
-  float:left;
 }
 
-.eleven .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 110px;
-}
 
 .twelve {
-  display:inline-block;
-  float:left;
   background-image: url("https://idlemindss.github.io/intro-workbook/css/images/coffeeguy.jpeg");
-  background-size:cover;
-  float:left;
-}
-
-.twelve .links {
-  visibility: hidden;
-  display:inline-block;
-  margin-top:100px;
-  margin-left: 75px;
 }
 
 .footer>h3 {
@@ -458,6 +347,18 @@ body {
   margin-top:50px;
   height:300px;
 }
+#footerContact {
+  font-family: 'Raleway', 'Lato', sans-serif;
+  margin-top: 50px;
+  color:white;
+  font-size: 15px;
+}
+#footerContact ul {
+  list-style-type:none;
+}
+#footerContact i {
+  margin-right: 20px;
+}
 
 #footerSummary {
   font-family: 'Amatic SC', 'Raleway', 'Lato', sans-serif;
@@ -465,6 +366,7 @@ body {
   margin-top: 50px;
   color:white;
   margin-left: 50px;
+  list-style: none;
 }
 
 #footerSummary a {
