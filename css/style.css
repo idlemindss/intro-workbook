@@ -80,10 +80,10 @@
 }
 
 .profilepicture {
-  height:500px;
-  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/headshotedited.png');
+  height:420px;
+  background-image: url('https://idlemindss.github.io/intro-workbook/css/images/kristina-green-1-sq.png');
   background-size: cover;
-  margin-top: 20px;
+  margin-top: 60px;
   outline: 2px solid #FDDCA0;
   outline-offset: -10px;
   display: inline-block;
