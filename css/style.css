@@ -586,7 +586,7 @@ and (orientation : landscape) {
     line-height: normal;
     margin-top: 200px;
   }
-
+  
   .navbar-brand{
     font-size: 25px;
     font-family:'Amatic SC','Raleway', sans-serif;
