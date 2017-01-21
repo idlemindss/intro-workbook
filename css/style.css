@@ -607,8 +607,8 @@ and (orientation : landscape) {
   .whoweare, .education, .skills {
     opacity:1;
     height:450px;
-
   }
+  
   .portfolioInstruct {
     margin:20px 10px 20px 10px;
   }
