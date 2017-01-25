@@ -37,7 +37,7 @@ function check_if_in_view() {
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
-$window.initMap = function () {
+window.initMap = function () {
         var uluru = {lat: 30.307, lng: -97.755};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
